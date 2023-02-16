@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/Users/jeremywirahadikusuma/Desktop/Nutrition GPT/styles.css">
+    <script src="/Users/jeremywirahadikusuma/open-ai/index.js"></script>
+  </head>
+  <body>
+
+      <header class="site-header sticky-top p-3 text-bg-dark">
+        
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="https://vitamindai.s3.ap-southeast-2.amazonaws.com/Images/image.png" class="img-fluid" width="30" height="30">
+              </a>
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-secondary">AI Nutrition</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              </ul>
+      
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-success">Sign-up</button>
+              </div>
+            </div>
+          </div>
+      </header>
+
+
+
+      <div class="position-relative overflow-hidden mt-5 pt-3 pb-1 mb-2 text-center">
+        <div class="col-md-7 mx-auto mt-5 pt-3 mb-2 pb-1">
+            <h1 class="display-5 fw-normal">Welcome to <span class="text-success">NutriMind </span><img class="img-fluid" src="https://vitamindai.s3.ap-southeast-2.amazonaws.com/Images/Untitled+design-14+copy.png" width="30" height="30"></h1>
+          <p class="lead fw-normal">Enter your daily life improvement goals or issues to start</p>
+        </div> 
+      </div>
+
+      
+      <form action="/generate" method="POST">
+        <div class="col-md-6 p-lg-1 mx-auto mb-3">
+          <input class="form-control form-control-dark text-bg-dark placeholder-bg-primary" type="text" placeholder="State your problems and goals here:" aria-label="readon" name="MainPrompt">
+        </div>
+  
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="submit" class="btn btn-success btn-lg px-4 justify-content-center align-content-center">Generate</button>
+        </div>
+      </form>
+      
+      
+
+
+    <div class="container text-center">
+        <h1><%= title %></h1>
+        <h4>Prompt Examples</h4>
+        <div class="row g-2">
+          <div class="col-4">
+            <div class="p-5 m-5 rounded text-bg-white shadow-lg">
+                <h4>I have issues with sleep and want to improve my energy levels</h4>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="p-5 m-5 rounded text-bg-white shadow-lg">
+                <h4>I want to have more mental clarity</h4>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="p-5 m-5 rounded bg-white shadow-lg">
+                <h4>I have a horrible sleeping scheduele and want to fix it</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-5 m-5 rounded text-bg-white shadow-lg">
+                <h4>I want to go home after work and still have enough energy to play with my children</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="p-5 m-5 rounded text-bg-white shadow-lg">
+                <h4>I want to get rid of my acne and mood swings and would like to improve my muscle mass </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom text-bg-light ">
+        <h1 class="display-4 fw-bold">Nutrimind Premium</h1>
+        <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Elevate Your Wellness Journey with Cutting-Edge AI Technology: Premium Nutrition Recommendations Powered by OpenAI's Davinci, Personalized to Meet Your Unique Health Needs</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-success btn-lg px-4 me-sm-3">Buy Now</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">learn more</button>
+        </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+            <img src="/Users/jeremywirahadikusuma/Desktop/Screenshot 2023-02-10 at 12.10.40 pm.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700">
+        </div>
+        </div>
+    </div>
+        
+
+      </main>
+      
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img src="https://vitamindai.s3.ap-southeast-2.amazonaws.com/Images/Untitled+design-14+copy.png" class="img-fluid" width="30" height="30">
+            <small class="d-block mb-3 text-muted">&copy; 2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Cool stuff</a></li>
+              <li><a class="link-secondary" href="#">Random feature</a></li>
+              <li><a class="link-secondary" href="#">Team feature</a></li>
+              <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+              <li><a class="link-secondary" href="#">Another one</a></li>
+              <li><a class="link-secondary" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Resource name</a></li>
+              <li><a class="link-secondary" href="#">Resource</a></li>
+              <li><a class="link-secondary" href="#">Another resource</a></li>
+              <li><a class="link-secondary" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Business</a></li>
+              <li><a class="link-secondary" href="#">Education</a></li>
+              <li><a class="link-secondary" href="#">Government</a></li>
+              <li><a class="link-secondary" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Team</a></li>
+              <li><a class="link-secondary" href="#">Locations</a></li>
+              <li><a class="link-secondary" href="#">Privacy</a></li>
+              <li><a class="link-secondary" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+      
+          <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      
+            
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
+
